@@ -3,6 +3,8 @@ import Image from "next/image"
 import Header from "../components/header"
 import Meta from "../components/meta"
 
+import hero from "../public/hero.png"
+
 const Home: NextPage = () => {
   return (
       <div>
@@ -14,6 +16,13 @@ const Home: NextPage = () => {
                     <h1 className="text-4xl font-semibold">Hey, What's up?</h1>
                     <p className="text-xl mt-4">My name is Luander, i'm a Brazilian software enginner powered by coffee, code and Linux who likes to create open-source solutions to problems i find. Always working and having ideas. My brain don't stop (pls send help);</p>
                 </div>
+                <Image
+                    src={hero}
+                    alt="Conifer"
+                    width={500}
+                    height={500}
+                    className="rounded-xl"
+                />
             </div>
         </div>
       </div>
